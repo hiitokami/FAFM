@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAFM 音频对比平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            color: #1a202c;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #4a5568;
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 3px solid #3182ce;
+        }
+
+        .audio-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            transition: all 0.2s ease;
+        }
+
+        .audio-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .audio-name {
+            font-weight: 500;
+            color: #2d3748;
+            min-width: 200px;
+            word-break: break-all;
+        }
+
+        .tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .tag-base {
+            background-color: #e53e3e;
+        }
+
+        .tag-method {
+            background-color: #38a169;
+        }
+
+        audio {
+            flex: 1;
+            min-width: 280px;
+            height: 40px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .audio-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+            audio {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAFM 音频对比平台</h1>
+        <p class="subtitle">本文方法输出结果 与 原始音频 在线播放对比</p >
+    </header>
+
+    <!-- 英文音频组 -->
+    <div class="section-title">英文样本（English Samples）</div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en1.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_en1.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en1_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_en1_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en2.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_en2.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en2_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_en2_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en3.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_en3.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en3_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_en3_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en4.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_en4.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_en4_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_en4_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <!-- 中文音频组 -->
+    <div class="section-title">中文样本（Chinese Samples）</div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh1.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_zh1.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh1_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_zh1_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh2.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_zh2.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh2_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_zh2_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh3.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_zh3.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh3_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_zh3_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh4.wav</span>
+        <span class="tag tag-method">本文方法</span>
+        <audio controls preload="none">
+            <source src="example_zh4.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+
+    <div class="audio-card">
+        <span class="audio-name">example_zh4_base.wav</span>
+        <span class="tag tag-base">原始音频</span>
+        <audio controls preload="none">
+            <source src="example_zh4_base.wav" type="audio/wav">
+            你的浏览器不支持音频播放，请更新浏览器或使用Chrome/Edge打开。
+        
+    </div>
+</body>
+</html>
